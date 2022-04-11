@@ -1,0 +1,33 @@
+.portraits .mosaique {
+    width:900px;
+    height:1200px;
+    display: grid;
+    grid-template : repeat(5, 1fr) / repeat(3, 1fr);
+    gap:3%;
+}
+
+.portraits .mosaique li {
+    background-size: cover;
+    list-style: none;
+}
+
+.portraits .mosaique li:first-child {
+    grid-row-start: 1;
+    grid-row-end: span 4;
+}
+.portraits .mosaique li:last-child {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-row-end: 6;
+}
+
+.portraits .mosaique li img {
+    max-width: 400px;
+    height: 100%;
+}
+
+.portraits .mosaique li img:hover {
+    opacity:70%;
+    transform: scale(1.05);
+}
+
