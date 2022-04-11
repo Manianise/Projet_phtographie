@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+nav {
+    display: flex;
+    padding: 50px;
+    justify-content: space-around;  
+    cursor: pointer; 
+    background: linear-gradient(#D1897B, white);
+    background-image: url(/ex6_photo/Ressources/Logophoto.jpg);
+    list-style: none;
+    align-items: center;
+}
+
+.bleu{
+    color: #353333;
+}
+
+h1{
+    color: #0a0000;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    justify-content: center;    
+}
+
+.CONTACTS{
+    font-weight: bold;
+}
+
+img{
+    max-width : 80px;
+    height : auto;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+header a{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
