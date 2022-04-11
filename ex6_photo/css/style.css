@@ -6,7 +6,6 @@ nav {
     justify-content: space-around;  
     cursor: pointer; 
     background: linear-gradient(#D1897B, white);
-    background-image: url(/ex6_photo/Ressources/Logophoto.jpg);
     list-style: none;
     align-items: center;
 }
@@ -29,13 +28,15 @@ h1{
 }
 
 img{
-    max-width : 80px;
+    max-width : 200px;
     height : auto;
     border-radius: 50px;
     padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;   
+    justify-content: center; 
+    position: relative; top: 10px; left: 10px; 
+    
 }
 
 header a{
