@@ -1,11 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;600&display=swap');
 
+
+/* Parametres generaux */
+
+* {
+    margin: 0;
+    padding:0;
+}
+
+body {
+
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+
+ .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+ }
+
+.bg-container {
+    background-image: url('../Ressources/coating/roses.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:5%;
+}
+
+.bg-container > * {
+    margin: 0 5%;
+}
+/* Header  */
+
+
+
 nav {
     display: flex;
     padding: 50px;
     justify-content: space-around;  
     cursor: pointer; 
-    background: linear-gradient(#D1897B, white);
+    background: linear-gradient(#D1897B, rgba(255, 255, 255, 0));
     list-style: none;
     align-items: center;
 }
@@ -45,9 +85,15 @@ header a{
 
 }
 
-.portraits .mosaique {
-    width:900px;
-    height:1200px;
+
+
+/* Premier article */
+
+.portraits {
+    padding:5%;
+}
+
+.portraits .mosaique {  
     display: grid;
     grid-template : repeat(5, 1fr) / repeat(3, 1fr);
     gap:3%;
@@ -69,7 +115,7 @@ header a{
 }
 
 .portraits .mosaique li img {
-    max-width: 400px;
+    width: 100%;
     height: 100%;
 }
 
