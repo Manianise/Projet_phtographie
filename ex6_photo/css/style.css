@@ -38,7 +38,25 @@ body {
 .bg-container > * {
     margin: 0 5%;
 }
+
+.articles {
+    padding:5%;
+}
+
+
+
 /* Header  */
+
+h1{
+    color: #0a0000;
+    font-family: 'Dancing Script', cursive;
+    font-size: 90px;
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    justify-content: center;  
+   
+}
 
 .container {
     max-width: 1050px;
@@ -164,18 +182,6 @@ body {
 .nav-container input[type="checkbox"]:checked ~ .ligne-menu .line3 {
     transform: rotate(-45deg);
   }
-  
-
-h1{
-    color: #0a0000;
-    font-family: 'Dancing Script', cursive;
-    font-size: 90px;
-    display: flex;
-    align-items: flex-start;
-    text-decoration: none;
-    justify-content: center;  
-   
-}
 
 .CONTACTS{
     font-weight: bold;
@@ -200,17 +206,52 @@ header a{
 }
 
 
+/* Parametres generaux articles */ 
+
+.articles, .mosaique {
+    gap:3%;
+}
+
+
+.articles img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Article Biographie */
+
+.bio-container {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+
+}
+
+.bio * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-shadow: #D1897B 0px 0 10px;
+    color:white;
+}
+
+.bio h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.bio p {
+    height: 100%;
+    font-size: 30px;
+    justify-content: space-around;
+}
 
 /* Premier article */
-
-.portraits {
-    padding:5%;
-}
 
 .portraits .mosaique {  
     display: grid;
     grid-template : repeat(5, 1fr) / repeat(3, 1fr);
-    gap:3%;
 }
 
 .portraits .mosaique li {
@@ -219,18 +260,11 @@ header a{
 }
 
 .portraits .mosaique li:first-child {
-    grid-row-start: 1;
-    grid-row-end: span 4;
-}
-.portraits .mosaique li:last-child {
-    grid-row-start: 2;
-    grid-column-start: 3;
-    grid-row-end: 6;
+    grid-area: 1 / auto / span 4 / auto;
 }
 
-.portraits .mosaique li img {
-    width: 100%;
-    height: 100%;
+.portraits .mosaique li:last-child {
+    grid-area: 2 / 3 / 6 / auto;
 }
 
 .portraits .mosaique li img:hover {
