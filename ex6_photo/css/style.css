@@ -33,14 +33,14 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     padding:5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bg-container > * {
     margin: 0 5%;
-}
-
-.articles {
-    padding:5%;
+    width:100%;
 }
 
 
@@ -54,7 +54,8 @@ h1{
     display: flex;
     align-items: flex-start;
     text-decoration: none;
-    justify-content: center;  
+    justify-content: center;
+    text-shadow: 340px 225px 0px #D1897b;
    
 }
 
@@ -67,7 +68,7 @@ h1{
 .navbar {
     width: 100%;
     box-shadow: 0 1px 4px rgba(255, 255, 255, 0);
-    background: linear-gradient(#D1897B, rgba(255, 255, 255, 0));
+    background: linear-gradient(#D1897B, rgba(0, 0, 0, 0.5));
     padding: 50px;
   }
 
@@ -201,7 +202,7 @@ h1{
     align-items: center;
     justify-content: center; 
     position: relative; top: 20px; left: 10px; 
-    filter: drop-shadow(0 0 0.50rem #e7c2d3);    
+    filter: drop-shadow(0 0 0.50rem #D1897B);
 }
 
 header a{
@@ -217,6 +218,11 @@ header a{
     gap:3%;
 }
 
+.articles {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),#D1897B,rgba(0, 0, 0, 0.5));
+    padding:5%;
+    height:100%;
+}
 
 .articles img{
     width: 100%;
