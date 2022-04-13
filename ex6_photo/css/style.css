@@ -321,6 +321,11 @@ h2{
     
 }
 
+h2{
+    padding: 10%;
+}
+
+
 .photographe * {
     display: flex;
     flex-direction: row;
@@ -332,9 +337,13 @@ h2{
 
 .photographe p{
     height: 100%;
-    font-size: 15px;
-    justify-content: flex-end;
+    font-size: 20px;
+    justify-content: space-around;
+    text-align: end;
+    flex-direction: column;
     font-family: 'Open Sans', sans-serif;
+    padding: 50px;
+    font-style: italic;
 }
 
 
