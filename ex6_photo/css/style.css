@@ -220,6 +220,7 @@ header a{
 
 .articles, .mosaique {
     gap:3%;
+    padding: 10%;
 }
 
 .articles {
