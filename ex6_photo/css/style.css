@@ -93,7 +93,11 @@ h1{
 
 .navbar .nav-container i:hover{
     transform: scale(1.1);
+    transform-origin: top right;
+    color: rgb(255, 254, 254);   
 }
+
+
 
 .nav-container {
     display: block;
@@ -281,5 +285,15 @@ header a{
     transform: scale(1.05);
 }
 
+/* Titre Portraits */
 
+h2{
+    font-size: 55px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: #D1897B 0px 0 10px;
+    color:white;
+    display: flex;
+  justify-content: center;
+}
 
