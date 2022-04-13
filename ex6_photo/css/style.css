@@ -298,6 +298,7 @@ h2{
     text-shadow: #D1897B 0px 0 10px;
     color:white;
     display: flex;
-  justify-content: center;
+    justify-content: center;
+    padding:2% 0;
 }
 
